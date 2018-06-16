@@ -1,0 +1,43 @@
+body {
+  font-family: 'Overlock', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Merienda One', cursive;
+}
+
+.head {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.head-image {
+  min-width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.title {
+  margin: 3% 5%;
+  color: white;
+}
+
+h1.title {
+  font-family: 'Courier New', Courier;
+  font-size: 9vw;
+  padding: 10px;
+}
+
+p.title {
+  font-size: 5vw;
+}
+
+p.title p.intro {
+  font-size: 300vw;
+}
