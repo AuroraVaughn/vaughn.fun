@@ -1,0 +1,24 @@
+{
+  "name": "aurora.fun",
+  "version": "0.0.1",
+  "description": "Personal static website.",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --config bs-config.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AuroraVaughn/vaughn.fun.git"
+  },
+  "author": "Aurora Vaughn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AuroraVaughn/vaughn.fun/issues"
+  },
+  "homepage": "https://github.com/AuroraVaughn/vaughn.fun#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "eslint-plugin-html": "^4.0.3"
+  }
+}
