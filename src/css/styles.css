@@ -82,6 +82,10 @@ p.title p.intro {
   margin: 0 auto;
 }
 
+.head-text-container:hover {
+  background: rgba(109, 109, 109, 0.726);
+}
+
 .text-container p {
   font-family: 'Courier New', Courier;
   font-size: 1.3rem;
@@ -93,7 +97,6 @@ p.title p.intro {
   min-width: 300px;
   max-width: 500px;
   display: inline-block;
-  flex-grow: 2 1 1
 }
 
 .centering-container {
@@ -214,6 +217,11 @@ a:hover {
 a:active {
   text-decoration: underline;
   color: #e4c2e4;
+}
+
+.devicon-postgresql-plain-wordmark {
+  display: block;
+  padding: 10% 0px;
 }
 
 @media(max-width: 900px) {
