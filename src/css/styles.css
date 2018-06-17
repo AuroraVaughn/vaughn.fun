@@ -1,5 +1,28 @@
+html {
+  font-size: 18px;
+}
+
 body {
   font-family: 'Overlock', cursive;
+  background-image: url("../images/aurora-borealis-large.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%
+}
+
+@media(max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    background-image: url("../images/aurora-bg-vertical.jpg");
+  }
 }
 
 h1,
@@ -10,17 +33,25 @@ h5 {
   font-family: 'Merienda One', cursive;
 }
 
+/* .technologies {
+  background: #24624100;
+} */
+
 .head {
   width: 100vw;
-  height: 100vh;
+  min-height: fit-content;
   position: relative;
   overflow: hidden;
 }
 
-.head-image {
-  min-width: 100%;
-  z-index: -1;
-  position: absolute;
+.head-flex-container {
+  align-items: stretch;
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  margin: 0 3%;
+  justify-content: flex-start;
+  min-width: 300px;
 }
 
 .title {
@@ -40,4 +71,122 @@ p.title {
 
 p.title p.intro {
   font-size: 300vw;
+}
+
+.profile-pic-container {
+  padding: 00% 2% 10% 5%;
+  min-width: 260px;
+  max-width: 360px;
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+}
+
+.profile-pic-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.text-container {
+  position: relative;
+  border: solid;
+  border-color: rgb(109, 109, 109);
+  background: rgba(39, 37, 37, 0.664);
+  border-radius: 15px;
+  border-width: 2px;
+  margin: 0 auto;
+}
+
+.text-container p {
+  font-family: 'Courier New', Courier;
+  font-size: 1.3rem;
+  padding: 3%;
+  color: rgb(201, 201, 201);
+}
+
+.head-text-container {
+  min-width: 300px;
+  max-width: 500px;
+  display: inline-block;
+  flex-grow: 2 1 1
+}
+
+.centering-container {
+  position: relative;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10%;
+}
+
+.devicon-container {
+  border: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  min-height: 180px;
+  background: #e4c2e4d5;
+}
+
+.devicon-style {
+  border: 0;
+  padding: 2px 2px 0px 2px;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.devicon-label {
+  border: 0;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0 0 2px 0;
+  position: relative;
+  text-align: center;
+}
+
+.images-to-devicon {
+  padding: 5px 0 0 0;
+  margin: 0;
+  position: absolute;
+  align-self: center;
+  width: 80%;
+}
+
+#redux-image-container {
+  background: #e4c2e4;
+  position: relative;
+  align-self: center;
+}
+
+#redux-image {
+  align-self: center;
+  padding: 10%;
+  width: 120px;
+  position: relative;
+}
+
+.section-heading {
+  display: flex;
+  min-width: 200px;
+  max-width: 60%;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.section-heading h2,
+.section-heading h3 {
+  margin: 2% auto;
+  text-align: center;
+  display: block;
+  color: rgb(201, 201, 201);
+}
+
+.section-heading h2 {
+  font-size: 2rem;
 }
