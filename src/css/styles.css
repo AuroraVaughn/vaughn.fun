@@ -104,6 +104,8 @@ p.title p.intro {
   color: rgb(201, 201, 201);
 }
 
+a {}
+
 .head-text-container {
   min-width: 300px;
   max-width: 500px;
@@ -189,4 +191,24 @@ p.title p.intro {
 
 .section-heading h2 {
   font-size: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: #e4c2e4;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #b14eb1;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #e4c2e4;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #e4c2e4;
 }
