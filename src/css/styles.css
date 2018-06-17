@@ -10,21 +10,6 @@ body {
   height: 100%
 }
 
-@media(max-width: 900px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  html {
-    font-size: 15px;
-  }
-  body {
-    background-image: url("../images/aurora-bg-vertical.jpg");
-  }
-}
-
 h1,
 h2,
 h3,
@@ -104,8 +89,6 @@ p.title p.intro {
   color: rgb(201, 201, 201);
 }
 
-a {}
-
 .head-text-container {
   min-width: 300px;
   max-width: 500px;
@@ -123,7 +106,7 @@ a {}
   flex: auto;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 10%;
+  margin: 0 5%;
 }
 
 .devicon-container {
@@ -131,8 +114,8 @@ a {}
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 180px;
-  min-height: 180px;
+  min-width: 150px;
+  min-height: 150px;
   background: #e4c2e4d5;
 }
 
@@ -160,17 +143,23 @@ a {}
   width: 80%;
 }
 
-#redux-image-container {
-  background: #e4c2e4;
-  position: relative;
-  align-self: center;
-}
-
 #redux-image {
   align-self: center;
   padding: 10%;
   width: 120px;
   position: relative;
+}
+
+#socketio-image {
+  padding: 1% 1% 0 1%;
+  width: 120px;
+  position: relative;
+  align-self: center;
+  /* width: 80%; */
+}
+
+#socketio-text {
+  padding: 10px 0;
 }
 
 .section-heading {
@@ -211,4 +200,19 @@ a:hover {
 a:active {
   text-decoration: underline;
   color: #e4c2e4;
+}
+
+@media(max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    background-image: url("../images/aurora-bg-vertical.jpg");
+  }
 }
