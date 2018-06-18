@@ -82,6 +82,10 @@ p.title p.intro {
   margin: 0 auto;
 }
 
+.head-text-container:hover {
+  background: rgba(109, 109, 109, 0.726);
+}
+
 .text-container p {
   font-family: 'Courier New', Courier;
   font-size: 1.3rem;
@@ -93,7 +97,6 @@ p.title p.intro {
   min-width: 300px;
   max-width: 500px;
   display: inline-block;
-  flex-grow: 2 1 1
 }
 
 .centering-container {
@@ -136,11 +139,25 @@ p.title p.intro {
 }
 
 .images-to-devicon {
-  padding: 5px 0 0 0;
+  padding: 18% 0;
   margin: 0;
   position: absolute;
   align-self: center;
   width: 80%;
+}
+
+#jasmine-image {
+  padding: 4% 1% 0 1%;
+  width: 120px;
+  position: relative;
+  align-self: center;
+}
+
+#chai-image {
+  padding: 4% 1% 8% 1%;
+  width: 102px;
+  position: relative;
+  align-self: center;
 }
 
 #redux-image {
@@ -200,6 +217,36 @@ a:hover {
 a:active {
   text-decoration: underline;
   color: #e4c2e4;
+}
+
+.devicon-postgresql-plain-wordmark {
+  display: block;
+  padding: 10% 0px;
+}
+
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.project-container {
+  min-width: 250px;
+  max-width: 450px;
+  margin: 5%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.projects-section img {
+  width: 100%;
 }
 
 @media(max-width: 900px) {

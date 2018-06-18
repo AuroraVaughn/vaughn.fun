@@ -9,6 +9,7 @@
   <meta name="description" content="Static personal website for Aurora Vaughn.">
   <meta name="author" content="Aurora Vaughn">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="src/images/favicon.ico" sizes="16x16 32x32 64x64" type="image/vnd.microsoft.icon">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merienda+One|Overlock:400i" rel="stylesheet">
   <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
@@ -42,6 +43,34 @@
       </div>
     </div>
     <div class="section-heading text-container">
+      <h2>Projects</h2>
+    </div>
+    <div class="projects-section">
+
+      <div class="text-container project-container">
+        <a href="http://www.byheart.club" target="_blank">
+          <img src="src/images/byheart.png" alt="Logo for by heart web app">
+        </a>
+        <p>By heart is a single page web application to help people memorize passages of text and speeches. The premise is that
+          by removing letters from a passage of text it forces users to focus and increases the cognitive load, which helps
+          retention. There are tools such as progressive hints when you mouse over a word and time line by line practice.
+        </p>
+
+        <p>By heart was created with React, Redux, Sequelize, Postgres, and Semantic UI. </p>
+      </div>
+      <div class="text-container project-container">
+        <a href="" target="_blank">
+          <img src="src/images/gitrunner.png" alt="Logo for Gitrunner">
+        </a>
+        <p>---
+        </p>
+
+        <p>---- </p>
+      </div>
+    </div>
+
+
+    <div class="section-heading text-container">
       <h2>Technologies</h2>
     </div>
     <div class="section-heading text-container">
@@ -52,7 +81,7 @@
   <!-- http://konpa.github.io/devicon/ -->
   <div>
 
-    <div class="flex-container technologies">
+    <div class="flex-container">
       <div class="devicon-container">
         <div class="devicon-style">
           <i class="devicon-javascript-plain"></i>
@@ -85,12 +114,12 @@
       </div>
 
       <div class="devicon-container">
-        <img id="redux-image" class="images-to-devicon" src="src/images/redux-small.png" />
+        <img id="redux-image" class="images-to-devicon" src="src/images/redux-small.png" alt="Redux Icon" />
         <p class="devicon-label">Redux</p>
       </div>
 
       <div class="devicon-container">
-        <img class="images-to-devicon" src="src/images/styled-components.png" />
+        <img class="images-to-devicon" src="src/images/styled-components.png" alt="styled-components logo" />
       </div>
 
       <div class="devicon-container">
@@ -107,9 +136,9 @@
       </div>
       <div class="devicon-container ">
         <div class="devicon-style ">
-          <i class=devicon-postgresql-plain-wordmark></i>
+          <i class="devicon-postgresql-plain-wordmark"></i>
         </div>
-        <p class="devicon-label ">Postgres</p>
+
       </div>
       <div class="devicon-container">
         <div class="devicon-style">
@@ -132,8 +161,24 @@
     </div>
     <div class="flex-container technologies">
       <div class="devicon-container">
-        <img id="socketio-image" src="src/images/socketio_transparent.png" />
+        <img id="socketio-image" src="src/images/socketio_transparent.png" alt="Sockets io icon" />
         <p id="socketio-text" class="devicon-label">Socket.io</p>
+      </div>
+      <div class="devicon-container">
+        <img id="socketio-image" src="src/images/jest-icon.png" alt="Jest testing framework icon" />
+        <p id="socketio-text" class="devicon-label">Jest</p>
+      </div>
+      <div class="devicon-container">
+        <img id="socketio-image" src="src/images/mocha-icon.png" alt="Mocha test runner icon" />
+        <p id="socketio-text" class="devicon-label">Mocha</p>
+      </div>
+      <div class="devicon-container">
+        <img id="chai-image" src="src/images/chai-icon.png" alt="Chai assertion library icon" />
+        <p class="devicon-label">Chai</p>
+      </div>
+      <div class="devicon-container">
+        <img id="jasmine-image" src="src/images/jasmine-icon.png" alt="Jasmine testing framework icon" />
+        <p id="socketio-text" class="devicon-label">Jasmine</p>
       </div>
     </div>
 
