@@ -139,7 +139,7 @@ p.title p.intro {
 }
 
 .images-to-devicon {
-  padding: 5px 0 0 0;
+  padding: 18% 0;
   margin: 0;
   position: absolute;
   align-self: center;
@@ -154,8 +154,8 @@ p.title p.intro {
 }
 
 #chai-image {
-  padding: 4% 1% 5% 1%;
-  width: 105px;
+  padding: 4% 1% 8% 1%;
+  width: 102px;
   position: relative;
   align-self: center;
 }
@@ -222,6 +222,31 @@ a:active {
 .devicon-postgresql-plain-wordmark {
   display: block;
   padding: 10% 0px;
+}
+
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.project-container {
+  min-width: 250px;
+  max-width: 450px;
+  margin: 5%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.projects-section img {
+  width: 100%;
 }
 
 @media(max-width: 900px) {
