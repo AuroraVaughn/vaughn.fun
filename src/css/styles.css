@@ -82,8 +82,10 @@ p.title p.intro {
   margin: 0 auto;
 }
 
-.head-text-container:hover {
-  background: rgba(109, 109, 109, 0.726);
+.project-container:hover {
+  border-color: rgba(8, 182, 23, 0.788);
+  border-width: 3px;
+  box-shadow: 10px 5px rgba(121, 163, 4, 0.726), -10px 5px rgba(75, 124, 19, 0.664), 10px -5px rgba(62, 158, 33, 0.692), ;
 }
 
 .text-container p {
@@ -117,9 +119,15 @@ p.title p.intro {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 150px;
+  width: 150px;
   min-height: 150px;
-  background: #e4c2e4d5;
+  background: #e4c2e4bd;
+}
+
+#csharp-image {
+  width: 120px;
+  min-height: 120px;
+  margin: 14% 3%
 }
 
 .devicon-style {
