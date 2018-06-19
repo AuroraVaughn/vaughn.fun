@@ -114,6 +114,11 @@ p.title p.intro {
   margin: 0 5%;
 }
 
+#width-limiter {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
 .devicon-container {
   border: 0;
   position: relative;
@@ -132,6 +137,17 @@ p.title p.intro {
   width: 120px;
   min-height: 120px;
   margin: 14% 3%
+}
+
+#react-native-image {
+  width: 130px;
+  min-height: 130px;
+  margin: 1% auto;
+}
+
+#react-native-text {
+  font-size: 1.4rem;
+  padding-bottom: 3%
 }
 
 .devicon-style {
