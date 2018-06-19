@@ -82,17 +82,17 @@ p.title p.intro {
   margin: 0 auto;
 }
 
-.project-container:hover {
-  border-color: rgba(8, 182, 23, 0.788);
-  border-width: 3px;
-  box-shadow: 10px 5px rgba(121, 163, 4, 0.726), -10px 5px rgba(75, 124, 19, 0.664), 10px -5px rgba(62, 158, 33, 0.692), ;
-}
-
 .text-container p {
   font-family: 'Courier New', Courier;
   font-size: 1.3rem;
   padding: 3%;
   color: rgb(201, 201, 201);
+}
+
+.project-container:hover {
+  border-color: rgba(8, 182, 23, 0.788);
+  border-width: 3px;
+  box-shadow: 10px 5px rgba(121, 163, 4, 0.726), -10px 5px rgba(75, 124, 19, 0.664), 10px -5px rgba(62, 158, 33, 0.692), ;
 }
 
 .head-text-container {
@@ -122,6 +122,10 @@ p.title p.intro {
   width: 150px;
   min-height: 150px;
   background: #e4c2e4bd;
+}
+
+.devicon-container:hover {
+  background: #e4c2e4f8;
 }
 
 #csharp-image {
