@@ -30,8 +30,8 @@ function applySelectorHandler() {
 
 function clickHandlerSelect(e) {
   const container = e.target.closest(".devicon-container")
-  console.log('before: ', window.selected)
-  console.log(container.dataset.skill, window.selected[container.dataset.skill])
+  // console.log('before: ', window.selected)
+  // console.log(container.dataset.skill, window.selected[container.dataset.skill])
   if (!window.selected[container.dataset.skill]) {
     window.selected[container.dataset.skill] = container.dataset.skill
     container.style.backgroundColor = "#47ec31b9"
@@ -42,8 +42,8 @@ function clickHandlerSelect(e) {
     container.style.backgroundColor = "#e4c2e4bd"
     container.style.border = "none"
   }
-  console.log(container)
-  console.log(window.selected[container.dataset.skill])
+  // console.log(container)
+  // console.log(window.selected[container.dataset.skill])
 }
 
 
