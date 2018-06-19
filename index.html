@@ -5,10 +5,11 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Aurora Vaughn</title>
   <meta name="description" content="Static personal website for Aurora Vaughn.">
   <meta name="author" content="Aurora Vaughn">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="src/images/favicon.ico" sizes="16x16 32x32 64x64" type="image/vnd.microsoft.icon">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merienda+One|Overlock:400i" rel="stylesheet">
   <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
@@ -17,9 +18,6 @@
 </head>
 
 <body>
-  <script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3001/browser-sync/browser-sync-client.js?v=2.24.4'><\/script>".replace("HOST", location.hostname));
-  //]]></script>
 
   <div class="head">
     <!-- <img class="head-image flex" src="src/images/aurora-borealis-large.jpg"> -->
@@ -34,8 +32,10 @@
       <div class="text-container head-text-container">
         <p class="head-text">
           I'm also looking for my next opportunity with availability beginning after July 13, 2017! Who else am I? I'm a Chicago dwelling,
-          cat owning, unrepentant nerd. I am currently a mentor in the Chicago Web Development Mentorship with Don Hansen.
-          In my downtime, I game and think too deeply about my media (Stephen Universe).
+          cat owning, unrepentant nerd. I am currently a mentor in the
+          <a href="https://www.meetup.com/Chicago-Web-Development-Mentorship/">Web Development Mentorship
+            <a/> with
+            <a href="https://www.twitch.tv/donthedeveloper">Don Hansen</a>. In my downtime, I game and think too deeply about my media (Steven Universe).
         </p>
         <p class="head-text">I'm most interest in projects that have a clearly defined product or objective that does not rely on the exploitation
           of consumer information. Ed tech, civic projects, software development shops, or business to business services
@@ -43,84 +43,110 @@
       </div>
     </div>
     <div class="section-heading text-container">
+      <h2>Projects</h2>
+    </div>
+    <div class="projects-section">
+
+      <div class="text-container project-container">
+        <a href="http://www.byheart.club" target="_blank">
+          <img src="src/images/byheart.png" alt="Logo for by heart web app">
+        </a>
+        <p>By heart is a single page web application to help people memorize passages of text and speeches. The premise is that
+          by removing letters from a passage of text it forces users to focus and increases the cognitive load, which helps
+          retention. There are tools such as progressive hints when you mouse over a word and time line by line practice.
+        </p>
+
+        <p>By heart was created with React, Redux, Sequelize, Postgres, and Semantic UI. </p>
+      </div>
+      <div class="text-container project-container">
+        <a href="" target="_blank">
+          <img src="src/images/gitrunner.png" alt="Logo for Gitrunner">
+        </a>
+        <p>GitRunner is an aspirational project built by me during a four and half day hackathon at Fullstack Academy. The program
+          recursively collects the commits from a GitHub repo and builds a tree data structure. It then uses autonomous agents
+          to interpret the tree into a JSON map object that PhaserJS can use. The aspirational goal is a game that allows
+          developers to get to know the shape of the file structure by playing a game that mimics it. </p>
+      </div>
+    </div>
+
+
+    <div class="section-heading text-container">
       <h2>Technologies</h2>
     </div>
     <div class="section-heading text-container">
-      <h3>These are technologies I am proficient with.</h3>
+      <h3>Tech I know.</h3>
 
     </div>
   </div>
   <!-- http://konpa.github.io/devicon/ -->
   <div>
 
-    <div class="flex-container technologies">
-      <div class="devicon-container">
+    <div class="flex-container skills">
+      <div class="devicon-container" data-skill="JavaScript">
         <div class="devicon-style">
           <i class="devicon-javascript-plain"></i>
         </div>
         <p class="devicon-label">JavaScript</p>
       </div>
-      <div class="devicon-container ">
+      <div class="devicon-container " data-skill="NodeJS">
         <div class="devicon-style ">
           <i class="devicon-nodejs-plain "></i>
         </div>
         <p class="devicon-label ">NodeJS</p>
       </div>
-      <div class="devicon-container">
+      <div class="devicon-container" data-skill="Express">
         <div class="devicon-style">
           <i class="devicon-express-original-wordmark"></i>
         </div>
         <p class="devicon-label">Express</p>
       </div>
-      <div class="devicon-container ">
+      <div class="devicon-container " data-skill="Sequelize">
         <div class="devicon-style ">
           <i class="devicon-sequelize-plain "></i>
         </div>
         <p class="devicon-label ">Sequelize</p>
       </div>
-      <div class="devicon-container">
+      <div class="devicon-container" data-skill="React">
         <div class="devicon-style">
           <i class="devicon-react-plain"></i>
         </div>
         <p class="devicon-label">React</p>
       </div>
 
-      <div class="devicon-container">
-        <img id="redux-image" class="images-to-devicon" src="src/images/redux-small.png" />
+      <div class="devicon-container" data-skill="Redux">
+        <img id="redux-image" class="images-to-devicon" src="src/images/redux-small.png" alt="Redux Icon" />
         <p class="devicon-label">Redux</p>
       </div>
 
-
-
-      <div class="devicon-container">
-        <img class="images-to-devicon" src="src/images/styled-components.png" />
+      <div class="devicon-container" data-skill="styled-components">
+        <img class="images-to-devicon" src="src/images/styled-components.png" alt="styled-components logo" />
       </div>
 
-      <div class="devicon-container">
+      <div class="devicon-container" data-skill="HTML">
         <div class="devicon-style">
           <i class="devicon-html5-plain"></i>
         </div>
         <p class=" devicon-label ">HTML</p>
       </div>
-      <div class="devicon-container ">
+      <div class="devicon-container " data-skill="CSS">
         <div class="devicon-style ">
           <i class="devicon-css3-plain "></i>
         </div>
         <p class="devicon-label ">CSS</p>
       </div>
-      <div class="devicon-container ">
+      <div class="devicon-container " data-skill="PostgresSQL">
         <div class="devicon-style ">
-          <i class=devicon-postgresql-plain-wordmark></i>
+          <i class="devicon-postgresql-plain-wordmark"></i>
         </div>
-        <p class="devicon-label ">Postgres</p>
+
       </div>
-      <div class="devicon-container">
+      <div class="devicon-container" data-skill="Git">
         <div class="devicon-style">
           <i class="devicon-git-plain"></i>
         </div>
         <p class="devicon-label">Git</p>
       </div>
-      <div class="devicon-container">
+      <div class="devicon-container" data-skill="GitHub">
         <div class="devicon-style">
           <i class="devicon-github-plain "></i>
         </div>
@@ -130,11 +156,41 @@
 
     </div>
 
-    <div class="section-heading">
-      <h3>These are technologies I am proficient with.</h3>
+    <div class="section-heading text-container">
+      <h3>Tech I have done.</h3>
+    </div>
+    <div class="flex-container technologies skills">
+      <div class="devicon-container" data-skill="socketio">
+        <img id="socketio-image" src="src/images/socketio_transparent.png" alt="Sockets io icon" />
+        <p id="socketio-text" class="devicon-label">Socket.io</p>
+      </div>
+      <div class="devicon-container" data-skill="Jest">
+        <img id="socketio-image" src="src/images/jest-icon.png" alt="Jest testing framework icon" />
+        <p id="socketio-text" class="devicon-label">Jest</p>
+      </div>
+      <div class="devicon-container" data-skill="Mocha">
+        <img id="socketio-image" src="src/images/mocha-icon.png" alt="Mocha test runner icon" />
+        <p id="socketio-text" class="devicon-label">Mocha</p>
+      </div>
+      <div class="devicon-container" data-skill="Chai">
+        <img id="chai-image" src="src/images/chai-icon.png" alt="Chai assertion library icon" />
+        <p class="devicon-label">Chai</p>
+      </div>
+      <div class="devicon-container" data-skill="Jasmine">
+        <img id="jasmine-image" src="src/images/jasmine-icon.png" alt="Jasmine testing framework icon" />
+        <p id="socketio-text" class="devicon-label">Jasmine</p>
+      </div>
+      <div class="devicon-container" data-skill="CSharp">
+        <img id="csharp-image" src="src/images/csharp.png" alt="C-sharp icon" />
+      </div>
     </div>
 
 
+    <div class="section-heading text-container">
+      <h3>Tech I met once.</h3>
+    </div>
+    <div class="flex-container technologies skills">
+    </div>
   </div>
 
   <script src="src/js/index.js "></script>

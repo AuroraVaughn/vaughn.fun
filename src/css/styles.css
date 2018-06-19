@@ -10,21 +10,6 @@ body {
   height: 100%
 }
 
-@media(max-width: 900px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  html {
-    font-size: 15px;
-  }
-  body {
-    background-image: url("../images/aurora-bg-vertical.jpg");
-  }
-}
-
 h1,
 h2,
 h3,
@@ -97,6 +82,12 @@ p.title p.intro {
   margin: 0 auto;
 }
 
+.project-container:hover {
+  border-color: rgba(8, 182, 23, 0.788);
+  border-width: 3px;
+  box-shadow: 10px 5px rgba(121, 163, 4, 0.726), -10px 5px rgba(75, 124, 19, 0.664), 10px -5px rgba(62, 158, 33, 0.692), ;
+}
+
 .text-container p {
   font-family: 'Courier New', Courier;
   font-size: 1.3rem;
@@ -108,7 +99,6 @@ p.title p.intro {
   min-width: 300px;
   max-width: 500px;
   display: inline-block;
-  flex-grow: 2 1 1
 }
 
 .centering-container {
@@ -121,7 +111,7 @@ p.title p.intro {
   flex: auto;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 10%;
+  margin: 0 5%;
 }
 
 .devicon-container {
@@ -129,9 +119,15 @@ p.title p.intro {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 180px;
-  min-height: 180px;
-  background: #e4c2e4d5;
+  width: 150px;
+  min-height: 150px;
+  background: #e4c2e4bd;
+}
+
+#csharp-image {
+  width: 120px;
+  min-height: 120px;
+  margin: 14% 3%
 }
 
 .devicon-style {
@@ -151,15 +147,23 @@ p.title p.intro {
 }
 
 .images-to-devicon {
-  padding: 5px 0 0 0;
+  padding: 18% 0;
   margin: 0;
   position: absolute;
   align-self: center;
   width: 80%;
 }
 
-#redux-image-container {
-  background: #e4c2e4;
+#jasmine-image {
+  padding: 4% 1% 0 1%;
+  width: 120px;
+  position: relative;
+  align-self: center;
+}
+
+#chai-image {
+  padding: 4% 1% 8% 1%;
+  width: 102px;
   position: relative;
   align-self: center;
 }
@@ -169,6 +173,18 @@ p.title p.intro {
   padding: 10%;
   width: 120px;
   position: relative;
+}
+
+#socketio-image {
+  padding: 1% 1% 0 1%;
+  width: 120px;
+  position: relative;
+  align-self: center;
+  /* width: 80%; */
+}
+
+#socketio-text {
+  padding: 10px 0;
 }
 
 .section-heading {
@@ -189,4 +205,69 @@ p.title p.intro {
 
 .section-heading h2 {
   font-size: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: #e4c2e4;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #b14eb1;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #e4c2e4;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #e4c2e4;
+}
+
+.devicon-postgresql-plain-wordmark {
+  display: block;
+  padding: 10% 0px;
+}
+
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.project-container {
+  min-width: 250px;
+  max-width: 450px;
+  margin: 5%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.projects-section img {
+  width: 100%;
+}
+
+@media(max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    background-image: url("../images/aurora-bg-vertical.jpg");
+  }
 }
