@@ -150,6 +150,27 @@ p.title p.intro {
   padding-bottom: 3%
 }
 
+#jquery-text {
+  font-size: 1.8rem;
+  padding-bottom: 3%
+}
+
+#jquery-image {
+  width: 120px;
+  min-height: 120px;
+  margin: 1% auto;
+}
+
+#react-vis-text {
+  font-size: 1.8rem;
+  padding-bottom: 3%
+}
+
+#react-vis-image {
+  width: 120px;
+  margin: 20% auto;
+}
+
 .devicon-style {
   border: 0;
   padding: 2px 2px 0px 2px;
