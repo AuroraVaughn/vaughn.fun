@@ -230,10 +230,16 @@ p.title p.intro {
 
 .section-heading {
   display: flex;
+  flex-wrap: wrap;
   min-width: 200px;
   max-width: 60%;
   margin: 5px auto;
   text-align: center;
+  justify-content: space-evenly;
+}
+
+div.section-heading>h2 {
+  width: 100%;
 }
 
 .section-heading h2,
@@ -296,6 +302,19 @@ a:active {
 
 .projects-section img {
   width: 100%;
+}
+
+.social-media {
+  display: relative;
+  width: 120px;
+  height: 120px;
+  padding: 0px 10px 3px 10px;
+}
+
+a.social-media>img,
+a.social-media>i {
+  width: 100%;
+  font-size: 100%
 }
 
 @media(max-width: 900px) {
